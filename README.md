@@ -42,22 +42,16 @@ Navegador web
 Git (para control de versiones)
 
 ⚙️ Instalación Local
-Clona el repositorio:
+1.Clona el repositorio:
 
-bash
-Copiar
-Editar
 git clone https://github.com/tuusuario/registro-rh-php.git
 cd registro-rh-php
-Importa el archivo db/init.sql en tu base de datos (usa phpMyAdmin o consola MySQL).
 
-Configura la conexión a la base de datos en el archivo PHP correspondiente (db.php o similar).
+2.Importa el archivo db/init.sql en tu base de datos (usa phpMyAdmin o consola MySQL).
 
-Inicia tu servidor local (XAMPP o similar) y abre en tu navegador:
+3.Configura la conexión a la base de datos en el archivo PHP correspondiente (db.php o similar).
 
-arduino
-Copiar
-Editar
+4.Inicia tu servidor local (XAMPP o similar) y abre en tu navegador:
 http://localhost/registro-rh-php
 
 
