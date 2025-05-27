@@ -35,7 +35,7 @@ PHP 7.4+
 
 MySQL/MariaDB
 
-Servidor local (XAMPP, Laragon, WAMP, etc.)
+Servidor local (XAMPP)
 
 Navegador web
 
