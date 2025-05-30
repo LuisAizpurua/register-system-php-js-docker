@@ -43,9 +43,8 @@ registro-rh-php/
 └── index.php                  # Página principal
 
 
-🧠 Usos
-PHP 7.4+
-Javascript
-MySQL/MariaDB
-Servidor local (Laragon)
-Docker Compose
+🧠 Herramientas
+- 🐘 PHP
+- ⚙️ MySQL/PhpAdmin (base de datos)
+- 🧠 JavaScript 
+- 🐳 Docker
