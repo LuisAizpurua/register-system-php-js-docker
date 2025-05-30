@@ -1,3 +1,9 @@
+  __  __ _   _ _____ ___ ___  _____   __
+ |  \/  | | | |_   _| __|   \| __\ \ / /
+ | |\/| | |_| | | | | _|| |) | _| \ V / 
+ |_|  |_|\___/  |_| |___|___/|___| \_/  
+---
+
 # 📋 Proyecto - Sistema de Registro RH con PHP
 
 ### Este proyecto ha sido asignado por la Universidad Tecnológica de Panamá y será sometido a pruebas de penetración realizadas por estudiantes como parte de su evaluación.
@@ -35,8 +41,9 @@ registro-rh-php/
 └── index.php                  # Página principal
 
 
-🧠 Requisitos
+🧠 Usos
 PHP 7.4+
+Javascript
 MySQL/MariaDB
 Servidor local (Laragon)
-
+Docker Compose
