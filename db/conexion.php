@@ -1,21 +1,27 @@
 <?php
-// Parámetros de conexión
-$host = 'localhost';
-$db   = 'registro_rrhh';
-$user = 'root';    // Cambiar en producción
-$pass = '';        // Cambiar en producción
+class Conexion
+{
 
-try {
-    // Crear instancia PDO con charset utf8mb4 para soportar emojis y más
-    $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8mb4", $user, $pass);
+    public function __construct() {}
 
-    // Configurar PDO para lanzar excepciones ante errores
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    public static function Conector()
+    {
+        $host = 'localhost';
+        $port = 3308;
+        $db   = 'registro_rrhh';
+        $user = 'root';    
+        $pass = 'sasa';        
 
-    // Evitar emulación de sentencias preparadas para mayor seguridad
-    $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+        try {
+            $pdo = new PDO("mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4", $user, $pass);
 
-} catch (PDOException $e) {
-    // En caso de error detener la ejecución con mensaje
-    die("Conexión fallida a la base de datos: " . $e->getMessage());
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+            $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+
+            return $pdo;
+        } catch (PDOException $e) {
+            die("Conexión fallida a la base de datos: " . $e->getMessage());
+        }
+    }
 }
